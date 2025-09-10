@@ -53,3 +53,13 @@ OpenWeather API
 
 HuggingFace API
  🤗
+
+## 🤖 Fun Commands
+🟢 "Alexa play [song]" → Plays song on YouTube  
+🟢 "Alexa time" → Tells current time  
+🟢 "Alexa who is [person]" → Wikipedia summary  
+🟢 "Alexa weather" → Current weather  
+🟢 "Alexa news" → Top 3 news headlines  
+🟢 "Alexa joke" → Random joke  
+🟢 "Alexa question" → Ask general questions  
+
