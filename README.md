@@ -24,33 +24,25 @@
 # Clone the repository
 git clone https://github.com/Mayank-cyber-cell/Personal-Assistant.git
 cd Personal-Assistant
-```
+
 # Install dependencies
 pip install -r requirements.txt
-
-🛠️ Built With
-
+```
+##🛠️ Built With
 Python
  🐍
-
 SpeechRecognition
  🎙️
-
 pyttsx3
  🔊
-
 pywhatkit
  🎵
-
 Wikipedia API
  📖
-
 News API
  📰
-
 OpenWeather API
  🌤️
-
 HuggingFace API
  🤗
 
