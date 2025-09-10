@@ -28,7 +28,8 @@ cd Personal-Assistant
 # Install dependencies
 pip install -r requirements.txt
 ```
-##🛠️ Built With
+## 🛠️ Built With
+
 Python
  🐍
 SpeechRecognition
