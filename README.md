@@ -1,6 +1,6 @@
 # 🎙️ Alexa-like Python Voice Assistant
 
-> _A voice-powered AI assistant that plays music, tells jokes, answers questions, fetch weather & news, and more!_  
+> _A voice-powered AI assistant that plays music, tells jokes, answers questions, fetches weather & news, and more!_  
 
 ![Assistant](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDZyMTk0eHBmZWVueXk1Z2lxdWd3MTIyYzYxcWcyZnFmcGIyd2YxdiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/tczJoRU7XwBS8/giphy.gif)
 
