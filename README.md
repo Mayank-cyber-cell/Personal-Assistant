@@ -13,7 +13,7 @@
 - 🌤️ **Weather Updates** → Fetches live weather (OpenWeather API).  
 - 📰 **Latest News** → Fetches top 3 headlines (News API).  
 - 📖 **Wikipedia Search** → Get quick summaries about people/events.  
-- 😂 **Jokes** → Hear random tech jokes.  
+- 😂 **Jokes** → Get random tech jokes.  
 - ❓ **Q&A** → Ask general questions (HuggingFace API).  
 
 ---
