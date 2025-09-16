@@ -8,7 +8,7 @@
 
 ## 🚀 Features
 
-- 🎵 **Play Songs** → Ask it to play anything on YouTube.  
+- 🎵 **Play Songs** → Ask it to play anything on YouTube.vjg  
 - ⏰ **Tell Time** → Get current Time instantly.  
 - 🌤️ **Weather Updates** → Fetches live weather (OpenWeather API).  
 - 📰 **Latest News** → Fetches top 3 headlines (News API).  
