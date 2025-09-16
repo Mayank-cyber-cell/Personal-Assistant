@@ -6,7 +6,7 @@
 
 ---
 
-## 🚀 Featuresssss
+## 🚀 Features
 
 - 🎵 **Play Songs** → Ask it to play anything on YouTube.
 - ⏰ **Tell Time** → Get current Time instantly.  
