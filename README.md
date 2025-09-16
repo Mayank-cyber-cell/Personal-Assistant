@@ -6,7 +6,7 @@
 
 ---
 
-## 🚀 Features
+## 🚀 Featuresssss
 
 - 🎵 **Play Songs** → Ask it to play anything on YouTube.
 - ⏰ **Tell Time** → Get current Time instantly.  
@@ -53,6 +53,6 @@ HuggingFace API
 🟢 "Alexa who is [person]" → Wikipedia summary  
 🟢 "Alexa weather" → Current weather  
 🟢 "Alexa news" → Top 3 news headlines  
-🟢 "Alexa joke" → Random jokes  
+🟢 "Alexa joke" → Random joke
 🟢 "Alexa question" → Ask general questions  
 
