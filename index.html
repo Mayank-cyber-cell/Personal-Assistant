@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Voice Assistant - Your Personal Alexa-like Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 16C12 13.7909 13.7909 12 16 12C18.2091 12 20 13.7909 20 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="16" cy="18" r="2" fill="currentColor"/>
+                    </svg>
+                    <span>Voice Assistant</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How it Works</a>
+                    <a href="#commands">Commands</a>
+                    <a href="#setup">Setup</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Your Personal AI Voice Assistant</h1>
+                <p class="hero-subtitle">Control your world with your voice. Play music, get weather updates, latest news, and much more.</p>
+                <div class="hero-buttons">
+                    <a href="#setup" class="btn btn-primary">Get Started</a>
+                    <a href="https://github.com/Mayank-cyber-cell/Personal-Assistant" class="btn btn-secondary" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="voice-pulse">
+                    <div class="pulse-ring"></div>
+                    <div class="pulse-ring"></div>
+                    <div class="pulse-ring"></div>
+                    <div class="mic-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                            <line x1="12" y1="19" x2="12" y2="23"/>
+                            <line x1="8" y1="23" x2="16" y2="23"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Powerful Features</h2>
+            <p class="section-subtitle">Everything you need in a voice assistant</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polygon points="10 8 16 12 10 16 10 8"/>
+                        </svg>
+                    </div>
+                    <h3>Play Music</h3>
+                    <p>Play any song on YouTube with a simple voice command</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="7"/>
+                            <polyline points="12 9 12 12 13.5 13.5"/>
+                            <path d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83"/>
+                        </svg>
+                    </div>
+                    <h3>Time & Date</h3>
+                    <p>Get current time and date instantly whenever you need</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25"/>
+                            <line x1="8" y1="16" x2="8.01" y2="16"/>
+                            <line x1="8" y1="20" x2="8.01" y2="20"/>
+                            <line x1="12" y1="18" x2="12.01" y2="18"/>
+                            <line x1="12" y1="22" x2="12.01" y2="22"/>
+                            <line x1="16" y1="16" x2="16.01" y2="16"/>
+                            <line x1="16" y1="20" x2="16.01" y2="20"/>
+                        </svg>
+                    </div>
+                    <h3>Weather Updates</h3>
+                    <p>Live weather information powered by OpenWeather API</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/>
+                        </svg>
+                    </div>
+                    <h3>Latest News</h3>
+                    <p>Stay updated with top headlines from around the world</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Wikipedia Search</h3>
+                    <p>Get quick summaries about people, places, and events</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                            <line x1="9" y1="9" x2="9.01" y2="9"/>
+                            <line x1="15" y1="9" x2="15.01" y2="9"/>
+                        </svg>
+                    </div>
+                    <h3>Tell Jokes</h3>
+                    <p>Brighten your day with random tech jokes</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                            <line x1="12" y1="17" x2="12.01" y2="17"/>
+                        </svg>
+                    </div>
+                    <h3>Answer Questions</h3>
+                    <p>Ask general questions powered by HuggingFace AI</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Voice Control</h3>
+                    <p>Hands-free operation with natural speech recognition</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Wake Word</h3>
+                    <p>Say "Alexa" to activate the assistant</p>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Speak Command</h3>
+                    <p>Give your command naturally</p>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Get Response</h3>
+                    <p>Receive instant action and feedback</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="commands" class="commands">
+        <div class="container">
+            <h2 class="section-title">Voice Commands</h2>
+            <p class="section-subtitle">Try these commands to interact with your assistant</p>
+            <div class="commands-grid">
+                <div class="command-item">
+                    <span class="command-text">"Alexa play [song name]"</span>
+                    <span class="command-desc">Plays song on YouTube</span>
+                </div>
+                <div class="command-item">
+                    <span class="command-text">"Alexa time"</span>
+                    <span class="command-desc">Tells current time</span>
+                </div>
+                <div class="command-item">
+                    <span class="command-text">"Alexa who is [person]"</span>
+                    <span class="command-desc">Wikipedia summary</span>
+                </div>
+                <div class="command-item">
+                    <span class="command-text">"Alexa weather"</span>
+                    <span class="command-desc">Current weather info</span>
+                </div>
+                <div class="command-item">
+                    <span class="command-text">"Alexa news"</span>
+                    <span class="command-desc">Top 3 news headlines</span>
+                </div>
+                <div class="command-item">
+                    <span class="command-text">"Alexa joke"</span>
+                    <span class="command-desc">Random tech joke</span>
+                </div>
+                <div class="command-item">
+                    <span class="command-text">"Alexa question"</span>
+                    <span class="command-desc">Ask general questions</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="setup" class="setup">
+        <div class="container">
+            <h2 class="section-title">Quick Setup</h2>
+            <div class="setup-content">
+                <div class="setup-steps">
+                    <div class="setup-step">
+                        <h3>1. Clone Repository</h3>
+                        <div class="code-block">
+                            <code>git clone https://github.com/Mayank-cyber-cell/Personal-Assistant.git
+cd Personal-Assistant</code>
+                        </div>
+                    </div>
+                    <div class="setup-step">
+                        <h3>2. Install Dependencies</h3>
+                        <div class="code-block">
+                            <code>pip install -r requirements.txt</code>
+                        </div>
+                    </div>
+                    <div class="setup-step">
+                        <h3>3. Configure API Keys</h3>
+                        <p>Create a <code>.env</code> file with your API keys:</p>
+                        <div class="code-block">
+                            <code>WEATHER_API_KEY=your_openweather_key
+NEWS_API_KEY=your_news_api_key
+IPINFO_TOKEN=your_ipinfo_token
+HUGGINGFACE_TOKEN=your_huggingface_token</code>
+                        </div>
+                    </div>
+                    <div class="setup-step">
+                        <h3>4. Run the Assistant</h3>
+                        <div class="code-block">
+                            <code>python main.py</code>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-stack">
+                    <h3>Built With</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <span class="tech-icon">🐍</span>
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">🎙️</span>
+                            <span>SpeechRecognition</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">🔊</span>
+                            <span>pyttsx3</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">🎵</span>
+                            <span>pywhatkit</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">📖</span>
+                            <span>Wikipedia API</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">📰</span>
+                            <span>News API</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">🌤️</span>
+                            <span>OpenWeather API</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">🤗</span>
+                            <span>HuggingFace API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Built with voice recognition and AI technology</p>
+            <div class="footer-links">
+                <a href="https://github.com/Mayank-cyber-cell/Personal-Assistant" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
