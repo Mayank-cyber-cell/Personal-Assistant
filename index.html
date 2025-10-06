@@ -23,10 +23,152 @@
                     <a href="#how-it-works">How it Works</a>
                     <a href="#commands">Commands</a>
                     <a href="#setup">Setup</a>
+                    <button class="settings-toggle" id="settingsToggle">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 1v6m0 6v6m5.2-13.2l-4.2 4.2m-5.2 5.2l-4.2 4.2M23 12h-6m-6 0H1m18.2 5.2l-4.2-4.2m-5.2-5.2l-4.2-4.2"/>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
     </nav>
+
+    <div class="settings-sidebar" id="settingsSidebar">
+        <div class="settings-header">
+            <h3>Assistant Settings</h3>
+            <button class="settings-close" id="settingsClose">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+        </div>
+        <div class="settings-content">
+            <div class="setting-group">
+                <h4>Voice Settings</h4>
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <label>Voice Recognition</label>
+                        <span class="setting-desc">Enable voice commands</span>
+                    </div>
+                    <label class="toggle">
+                        <input type="checkbox" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <label>Wake Word Detection</label>
+                        <span class="setting-desc">Always listen for "Alexa"</span>
+                    </div>
+                    <label class="toggle">
+                        <input type="checkbox" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <label>Text-to-Speech</label>
+                        <span class="setting-desc">Enable voice responses</span>
+                    </div>
+                    <label class="toggle">
+                        <input type="checkbox" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="setting-group">
+                <h4>Feature Toggles</h4>
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <label>Music Playback</label>
+                        <span class="setting-desc">YouTube integration</span>
+                    </div>
+                    <label class="toggle">
+                        <input type="checkbox" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <label>Weather Updates</label>
+                        <span class="setting-desc">OpenWeather API</span>
+                    </div>
+                    <label class="toggle">
+                        <input type="checkbox" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <label>News Feed</label>
+                        <span class="setting-desc">Latest headlines</span>
+                    </div>
+                    <label class="toggle">
+                        <input type="checkbox" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <label>Wikipedia Search</label>
+                        <span class="setting-desc">Quick summaries</span>
+                    </div>
+                    <label class="toggle">
+                        <input type="checkbox" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <label>Jokes</label>
+                        <span class="setting-desc">Random tech humor</span>
+                    </div>
+                    <label class="toggle">
+                        <input type="checkbox" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <label>Q&A System</label>
+                        <span class="setting-desc">HuggingFace AI</span>
+                    </div>
+                    <label class="toggle">
+                        <input type="checkbox" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="setting-group">
+                <h4>Preferences</h4>
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <label>Notifications</label>
+                        <span class="setting-desc">Show system notifications</span>
+                    </div>
+                    <label class="toggle">
+                        <input type="checkbox">
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <label>Dark Mode</label>
+                        <span class="setting-desc">Use dark theme</span>
+                    </div>
+                    <label class="toggle">
+                        <input type="checkbox" id="darkModeToggle">
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="settings-overlay" id="settingsOverlay"></div>
 
     <section class="hero">
         <div class="container">
@@ -303,5 +445,44 @@ HUGGINGFACE_TOKEN=your_huggingface_token</code>
             </div>
         </div>
     </footer>
+
+    <script>
+        const settingsToggle = document.getElementById('settingsToggle');
+        const settingsSidebar = document.getElementById('settingsSidebar');
+        const settingsClose = document.getElementById('settingsClose');
+        const settingsOverlay = document.getElementById('settingsOverlay');
+        const darkModeToggle = document.getElementById('darkModeToggle');
+
+        function openSettings() {
+            settingsSidebar.classList.add('active');
+            settingsOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeSettings() {
+            settingsSidebar.classList.remove('active');
+            settingsOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        settingsToggle.addEventListener('click', openSettings);
+        settingsClose.addEventListener('click', closeSettings);
+        settingsOverlay.addEventListener('click', closeSettings);
+
+        darkModeToggle.addEventListener('change', (e) => {
+            if (e.target.checked) {
+                document.body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                document.body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            document.body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+    </script>
 </body>
 </html>
