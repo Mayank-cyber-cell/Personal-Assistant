@@ -1,4 +1,4 @@
-cbj
+cb
 
 # 🎙️ Alexa-like Python Voice Assistant
 
