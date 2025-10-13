@@ -1,6 +1,6 @@
 
 
-# 🎙️ Alexa-like Python Voice Assistant
+# 🎙️ Alexa-like Python Voice Assistant 
 
 > _A voice-powered AI assistant that plays music, tells jokes, answers questions, fetches weather & news, and more!_  
 
