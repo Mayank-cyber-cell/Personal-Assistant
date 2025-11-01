@@ -1,4 +1,4 @@
-# Voice Assistant - Setup Instructions
+# Voice Assistant - Setup Instructions 
 
 ## Quick Start Guide
 
