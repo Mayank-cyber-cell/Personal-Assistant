@@ -1,5 +1,6 @@
 # Voice Assistant - Setup Instructions 
 
+
 ## Quick Start Guide
 
 ### 1. Install Python Dependencies
