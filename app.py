@@ -102,6 +102,7 @@ def process_command(command):
         "action": None
     }
 
+    
     if 'play' in command:
         song = command.replace('play', '').strip()
         response["response"] = f'Playing {song}'
